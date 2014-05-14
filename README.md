@@ -8,11 +8,13 @@ This is [Rails Application Template](http://guides.rubyonrails.org/rails_applica
 * [Bootstrap](http://getbootstrap.com/)
 * [Guard](http://guardgem.org/)
 * [Spring](https://github.com/rails/spring)
+* [RSpec](http://rspec.info/)
 * [FactoryGirl](https://github.com/thoughtbot/factory_girl)
 * etc...
 
-# replace
+# replace (delete and create file)
 * app/views/layouts/application.html.erb -> application.html.slim
+* test/ -> spec/
 
 # run command
 * git initial commit, add remote repo
