@@ -8,7 +8,11 @@ This is [Rails Application Template](http://guides.rubyonrails.org/rails_applica
 * [Bootstrap](http://getbootstrap.com/)
 * [Guard](http://guardgem.org/)
 * [Spring](https://github.com/rails/spring)
+* [FactoryGirl](https://github.com/thoughtbot/factory_girl)
 * etc...
+
+# replace
+* app/views/layouts/application.html.erb -> application.html.slim
 
 # run command
 * git initial commit, add remote repo
