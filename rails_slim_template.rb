@@ -1,4 +1,4 @@
-dir = File.expand_path(File.dirname($0))
+dir = Dir::pwd
 
 ########################################
 # Gemfile
