@@ -3,6 +3,10 @@ This is [Rails Application Template](http://guides.rubyonrails.org/rails_applica
 # rails new
 ``rails new app_name -m path/to/rails_slim_template.rb``
 
+# alias (zsh)
+``alias rnew='rails new$1 -m https://github.com/yoshiko-pg/rails_slim_template/raw/master/rails_slim_template.rb'``
+``rnew app_name``
+
 # use gem
 * [Slim](http://slim-lang.com/)
 * [Bootstrap](http://getbootstrap.com/)
