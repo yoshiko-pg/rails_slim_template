@@ -163,9 +163,8 @@ git :init
 git :add => '.'
 git :commit => '-am "Initial commit"'
 
-@remote_repo = ask("GitHub repo name is ...? [repo_name / no]")
-@remote_repo = nil if @remote_repo == 'no'
-if @remote_repo
+if yes?('Exist remote repository? [yes/no]')
+  @remote_repo = ask("remote repository url is")
   git :remote => "add origin #@remote_repo"
   git :push => '-u origin master'
 end
@@ -174,8 +173,9 @@ end
 ########################################
 # Heroku
 ########################################
-if @remote_repo && yes?('Deploy to heroku?')
+if yes?('Deploy to heroku? [yes/no]')
+  @heroku_name = ask("heroku app name is")
   run 'heroku create'
-  run "heroku rename #@remote_repo"
+  run "heroku rename #@heroku_name"
   git push: 'heroku master'
 end
