@@ -4,7 +4,7 @@ dir = Dir::pwd
 # Gemfile
 ########################################
 remove_file 'Gemfile'
-run 'touch Gemfile'
+create_file 'Gemfile' do body = '' end
 
 add_source 'https://rubygems.org'
 
@@ -24,6 +24,8 @@ gem_group :development, :test do
   gem 'guard-rspec'
   gem 'guard-spring'
   gem 'factory_girl_rails'
+  gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
+  gem 'wdm', platforms: [:mingw, :mswin, :x64_mingw]
 end
 
 gem_group :test do
@@ -33,7 +35,7 @@ gem_group :test do
   gem 'database_cleaner', github: 'bmabey/database_cleaner'
   gem 'libnotify' if /linux/ =~ RUBY_PLATFORM
   gem 'growl' if /darwin/ =~ RUBY_PLATFORM
-  gem 'rb-notifu' # Uncomment these lines on Windows.
+  gem 'rb-notifu', platforms: [:mingw, :mswin, :x64_mingw]
 end
 
 gem 'sass-rails'
