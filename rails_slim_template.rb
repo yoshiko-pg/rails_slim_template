@@ -16,6 +16,7 @@ gem 'faker'
 gem 'will_paginate'
 gem 'nokogiri'
 gem 'spring'
+gem 'dotenv-rails'
 
 gem_group :development, :test do
   gem 'sqlite3'
