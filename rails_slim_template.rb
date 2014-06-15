@@ -118,7 +118,8 @@ doctype 5
 html lang="ja"
   head
     meta charset="UTF-8"
-    title Railbook
+    meta name="viewport" content="width=device-width, initial-scale=1.0"
+    title TmpTitle
     = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
     = javascript_include_tag "application", "data-turbolinks-track" => true
     = csrf_meta_tags
